@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/ag-grid/dist/ag-grid.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-theme-fresh.css">
+    <script src="start.js"></script>
+
+    <style>
+      .actual {
+        background-color: rgba(0,255,0, .1);
+      }
+      .budget {
+        background-color: rgba(255,0,0, .1);
+      }
+      .negative {
+        color: darkred;
+      }
+      .rightAlign {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body style="height: 100%; margin:0;">
+
+    <div style="height:10%">
+      <button id="btnMonthDown"><</button>
+      <button id="btnMonthUp">></button>
+    </div>
+
+    <div id="grid1" style="width: 100%; height: 90%;" class="ag-theme-fresh">
+
+    </div>
+  </body>
+</html>
